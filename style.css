@@ -1,0 +1,99 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background: #2c3e50;          /* tmavá barva – změň si podle sebe */
+      color: white;
+      padding: 1rem 2rem;
+      position: sticky;             /* zůstane nahoře při scrollu */
+      top: 0;
+      z-index: 100;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;   /* logo vlevo, menu vpravo */
+      align-items: center;
+      flex-wrap: wrap;                  /* na malé obrazovce se složí */
+      gap: 1.5rem;
+    }
+
+    .logo img {
+  height: 100px;          /* ← hlavní způsob – nastav výšku, šířka se přizpůsobí sama */
+  width: auto;           /* zachová proporce (nejdůležitější!) */
+  display: block;        /* odstraní malé mezery pod obrázkem */
+}
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    nav a:hover {
+      color: #3498db;
+      text-decoration: underline;
+    }
+
+    /* Mobil – menu pod sebe */
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+
+.kontejner{
+    display: flex;           /* ← hlavní kouzlo */
+      gap: 20px;               /* mezera mezi bloky */
+      /* padding: 20px; */     /* volitelné – odsazení uvnitř */
+      /* flex-wrap: wrap; */   /* pokud chceš, aby se na malé obrazovce složily pod sebe */
+}
+
+.block1{
+        padding: 20px;
+            border-radius: 8px;
+                flex: 1;                 /* oba bloky stejně široké */
+                    margin: 40px;
+
+}
+
+.block2{
+        padding: 20px;
+            border-radius: 8px;
+                flex: 1;                 /* oba bloky stejně široké */
+                        margin: 40px;
+                    
+}
+
+.block3{
+        padding: 20px;
+            border-radius: 8px;
+                flex: 1;                 /* oba bloky stejně široké */
+                        margin: 40px;
+                    
+}
+
+.block4{
+        padding: 20px;
+            border-radius: 8px;
+                flex: 1;                 /* oba bloky stejně široké */
+                        margin: 40px;
+                    
+}
